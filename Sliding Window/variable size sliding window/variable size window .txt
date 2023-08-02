@@ -1,0 +1,18 @@
+1.In variable  size sliding window we have given array and sum and we have to find The largest sub array with respect to given sum .
+2.In varaible size sliding window instead of window size  , we will have given some condtion and we will have to find window size to maximize or minimize it ..
+
+3.Pseudo Code:::
+
+ while j < size of array :
+        we will do some calculation to avaoid O(n^2) complexivity
+    if condition < k :
+        j=j+1 
+    elif condition ==k :
+        we will update the answer 
+        j=j+1
+    elif condition > k :
+        while condition > k :
+            remove calculation for i ( Here cuurent sum is greater than original sum then we have to increase i ,i++ , No only w ehave to incraese i we have to check sum in between i to j should not greater than original sum )
+                i=i+1
+        j=j+1
+    return answer

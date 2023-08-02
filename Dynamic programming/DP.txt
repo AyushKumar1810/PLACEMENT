@@ -1,0 +1,28 @@
+Dp is just like Recursion .. 
+Q. how to identify  that this questions needs DP ?
+Ans. There is a two way to identify wether we have to ue dp or not ::
+1 . In Dp problem Ther will be choice given to us that we have to select that element or not .. 
+2. Optimal : like we have to find Max, Min , Largest, smallest (maximum Profit <minimum Profit) .. 
+NOTE: In DP Parent's is Recursion so we have to use Recursion for solving Dp 
+Mostly students solve Dp questions via matrix Top down Approach ..
+3 . How to use Recursion in DP ?
+Ans. we can use it by two ways , 1. By memoization : Would have to write 2 more  line of code and the Recursive solution will converted into memoizd DP . and the 2nd one is Top-down Approach(tabularization):A must condition is that we Already have Recursive solution ready ( Once you will write Recursive solution then this matrix will be very esay to draw , after writing Recursive solution then make tabularization Form and sove the problem )
+
+NOTE: Never start DP problem with Top-down Approach , 1st write it's recursive solution  , then memoizied it ,  Then make tabularization to solve our dp problem
+
+**                 "" Types Of knapsack "" 
+There are several types of knapsack problems, each with different variations and constraints. The main types of knapsack problems are:
+
+0/1 Knapsack: In this problem, each item can either be included (1) or excluded (0) from the knapsack. The goal is to maximize the total value of the selected items without exceeding the capacity of the knapsack.
+
+Fractional Knapsack: In this problem, items can be included partially, i.e., fractions of items can be taken. Each item has a weight and a value, and the goal is to maximize the total value while staying within the capacity of the knapsack.
+
+Multiple Knapsack: In this problem, there are multiple knapsacks with different capacities, and each item can be assigned to any of the knapsacks. The goal is to maximize the total value of the selected items while ensuring that the total weight in each knapsack does not exceed its capacity.
+
+Unbounded Knapsack: In this problem, there is an infinite supply of each item, and an item can be included multiple times in the knapsack. The goal is to maximize the total value without exceeding the capacity of the knapsack.
+
+Bounded Knapsack: In this problem, there is a limited supply of each item, and each item can be included only a certain number of times (bounded by its count). The goal is to maximize the total value while staying within the capacity and considering the item count limits.
+
+Subset Sum Knapsack: In this problem, instead of maximizing the total value, the goal is to find if there exists a subset of items whose total value sums up to a given target value. Each item has a weight and a value, and the target value is the capacity of the knapsack.
+
+These are some of the most common types of knapsack problems. Each variation has its unique characteristics and requires different algorithms and techniques to find the optimal solution. Dynamic programming is a common approach used to solve many knapsack problems efficiently. However, for some variations, greedy algorithms or other optimization methods may be more suitable.

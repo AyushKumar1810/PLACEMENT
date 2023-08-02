@@ -1,0 +1,6 @@
+Where can we use Sliding window teachnique ?
+Ans.Where in question Mentioning We have to find "subarray " or maximum or minimum or windows size ,largest oe smallest mentioning in question Then we can think of using
+2>How mant type of it ?
+Ans. It's of two type fixed type slidong window and Variable size windows .
+3> what will be our approach 
+Ans. we can thin of like if we have to find sum sub array of an given array  then , we can add it and remove 1st part and add last part and remove again 1st part and adding last part , it's like we are sliding our window from left to right

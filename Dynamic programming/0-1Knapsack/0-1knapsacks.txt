@@ -1,0 +1,5 @@
+0-1 knapsack problem is a classic optimization problem in computer science and combinatorial optimization. It is a variation of the knapsack problem, where the goal is to maximize the total value of items in a knapsack (a container) without exceeding its weight capacity.
+
+In the 0-1 knapsack problem, each item has a specific weight and a corresponding value. The objective is to choose a subset of the items in such a way that their total weight does not exceed the capacity of the knapsack, and their total value is maximized.
+
+The key characteristic of the 0-1 knapsack problem is that each item can only be either included entirely (1) or excluded (0) from the knapsack. This means that fractions of items are not allowed; it's a binary decision for each item.

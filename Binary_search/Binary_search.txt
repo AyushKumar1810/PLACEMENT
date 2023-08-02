@@ -1,0 +1,12 @@
+Note-
+* If the number at the middle index is less than the target
+,it means the target is in the end half of the remaining search space. 
+The code updates the start pointer start to mid + 1 to continue searching
+in the end half.
+
+** If the number at the middle index is greater than the target,
+ it means the target is in the start half of the remaining search space. 
+ The code updates the end pointer end to mid - 1 to continue searching 
+ in the start half.
+
+*** If we have an given sorted array then No matter what we have to use binary Search any how ,

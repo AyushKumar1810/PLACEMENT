@@ -1,0 +1,18 @@
+1)A Heap is a special Tree-based data structure in which the tree is a complete binary tree. Generally, Heaps can be of two types:
+
+Max-Heap: In a Max-Heap the key present at the root node must be greatest among the keys present at all of it’s children. The same property must be recursively true for all sub-trees in that Binary Tree.
+
+Min-Heap: In a Min-Heap the key present at the root node must be minimum among the keys present at all of it’s children. The same property must be recursively true for all sub-trees in that Binary Tree. 
+
+2) For identifying the Question is of Heaps , Two Point Always includes :
+2.a) In question The keywords Includes "K " 
+2.b) Im questions The keywords Includes " Smallest or Largest "  " Top or closest"
+If In any Question these two includes then definetly we have to use "Heap"
+
+3) Which Heap To choose ?? 
+3.a) If in questions it's mentioned keywords "k" and "Smallest" then we have to Use "Max Heap " property , vice versa ..
+3.b)If in questions it's mentioned keywords "k" and "Largest" then we have to Use "Min Heap " property , vice versa ..
+4) what we have to do ?
+Ans) Basically it’s just a sorting of O(nlog(n)) but using Heap it Makes O(nlog(k))
+5) In Largest / greatest / Top We have to use Min Heap Property 
+6) In Smallest /lowest / closest We have to use Max Heap Property 

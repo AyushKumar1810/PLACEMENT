@@ -1,0 +1,9 @@
+Given a limited range array of integers of size n with all its elements between 1 to n with the exception of one element which occur twice and one number which is missing from the list. Find missing number and the duplicate element in linear time and without using any extra memory.
+We discuss here some algorithm problems on array and string covering the following:
+-Sliding Window
+-Missing and Duplicate number from 1 to N
+-Two Pointers and Three Pointers
+-Query Processing Problems
+
+
+NOTE- this type of question will ask in Face To Face Interview

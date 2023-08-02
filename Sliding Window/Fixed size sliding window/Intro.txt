@@ -1,0 +1,14 @@
+In fixed size sliding window we have given array and window size and we have to find it's sum of given window size
+
+Pseudo Code for Fixed size sliding window::
+ 
+while j < size:
+    we will do calculation here { we are doing calculation here to avaoid O(n^2)}
+    if windowsize < k :
+        j=j+1 (we will increase j value so that our window size increase )
+    elif windowsize==k:
+        1.we will do calculation on ans 
+        2.we will remove  i 
+        3.we will mantain our window size as we will delete 1st element and adding nexr element 
+
+return ans

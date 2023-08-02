@@ -1,0 +1,5 @@
+Important points 
+1 > To make input smaller . But why? and how ?
+Ans.Input didn't get small , It automatically get's small as we make Descision  ..
+2 > When we have to use Recursion ????
+Ans .

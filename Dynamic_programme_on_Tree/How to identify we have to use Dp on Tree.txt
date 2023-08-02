@@ -1,0 +1,4 @@
+DP on Trees-Introduction and Identification
+Dynamic Programming(DP) is a technique to solve problems by breaking them down into overlapping sub-problems which follows the optimal substructure. There are various problems using DP like subset sum, knapsack, coin change etc. DP can also be applied on trees to solve some specific problems.
+
+We define functions for nodes of the trees, which we calculate recursively based on children of a nodes. One of the states in our DP usually is a node i, denoting that we are solving for the subtree of node i.
