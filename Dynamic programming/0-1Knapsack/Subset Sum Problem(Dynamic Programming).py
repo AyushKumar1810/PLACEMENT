@@ -31,3 +31,4 @@ if __name__ == "__main__":
     sum = 6
     n = len(arr)
     print("Is the sum present in the subset?", subsetSum(arr, sum, n))
+
