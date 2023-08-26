@@ -26,8 +26,8 @@ def perfectSum(arr, n, sum):
     return perfectSumMemoized(arr, n, sum, dp)
 
 # Usage:
-arr = [1, 5, 11, 5]
+arr = [1, 5, 0, 11, 5, 0]
 n = len(arr)
-sum = 11
+sum = 16
 result = perfectSum(arr, n, sum)
 print("Output:", result)
