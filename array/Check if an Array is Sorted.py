@@ -12,7 +12,11 @@
 # Here element 5 is not smaller than or equal to its future elements.
 
 def sorted(arr,n):
-    for i in range(arr,n):
+    for i in range(1,n):
         if arr[i] < arr[i-1]:
             return False
     return True
+if __name__ == "__main__":
+    arr = [1, 2, 3, 4, 5]
+    n = 5
+    print("True" if sorted(arr, n) else "False")
