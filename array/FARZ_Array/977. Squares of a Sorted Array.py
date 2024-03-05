@@ -48,3 +48,11 @@ print(solution.sortedSquares(nums1))  # Output: [0, 1, 9, 16, 100]
 
 nums2 = [-7, -3, 2, 3, 11]
 print(solution.sortedSquares(nums2))  # Output: [4, 9, 9, 49, 121]
+
+#OR simple one:
+class Solution:
+    def sortedSquares(self, nums: List[int]) -> List[int]:
+        l = []
+        for i in nums :
+            l.append(i*i) # squaring 
+        return sorted(l)# the sorting the squaring value
