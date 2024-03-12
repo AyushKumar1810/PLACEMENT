@@ -52,9 +52,9 @@ def threeSumClosest(nums, target):
                 min_diff = current_diff
                 closest_sum = current_sum
                 
-            if current_sum < target:
+            if current_sum < target: # As we have sort an array so if the Required target is greater than that of current sum then we have to move Left = left + 1
                 left += 1
-            elif current_sum > target:
+            elif current_sum > target:#As we have sort an array so if the Required target is lesser than that of current sum then we have to move right = right - 1
                 right -= 1
             else:
                 return closest_sum
