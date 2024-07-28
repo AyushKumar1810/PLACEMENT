@@ -25,16 +25,16 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         left , right = 0 , 1# initialising Pointers
-        max=0
+        maximum=0
         while right < len(prices):
 
             if prices[left] < prices[right]:
                 difference = prices[right] - prices[left]
-                profit = max(difference,max)
+                maximum = max(difference,maximum)
             else:
                 left = right
             right+=1
-        return profit
+        return maximum
 
 
 
