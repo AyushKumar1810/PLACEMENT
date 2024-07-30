@@ -51,7 +51,6 @@ class Solution:
         
         return nums[left]
 
-# Creating an instance of the Solution class
 solution = Solution()
 
 # Example 1
