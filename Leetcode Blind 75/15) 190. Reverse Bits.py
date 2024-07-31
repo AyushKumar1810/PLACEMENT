@@ -27,9 +27,9 @@
 # Follow up: If this function is called many times, how would you optimize it?
 class Solution:
     def reverseBits(self, n: int) -> int:
-        result = 0
+        results = 0
         for i in range(32):
             # Extract the i-th bit from n and add it to result
             bit = (n >> i) & 1
-            result = (result << 1) | bit
-        return result
+            results = (results << 1) | bit
+        return results
