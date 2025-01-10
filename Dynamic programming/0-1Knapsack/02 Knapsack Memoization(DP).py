@@ -1,0 +1,51 @@
+def knapsack(wt, val, W, n, t):
+    # Base case
+    if n == 0 or W == 0: # If no items or capacity is 0 then profit is 0 
+        return 0
+
+    # If already calculated
+    if t[n][W] != -1:
+        return t[n][W]  
+
+    # Else calculate
+    if wt[n - 1] <= W: # If weight of item is less than capacity then we have two choices either to include it or exclude it 
+        t[n][W] = max(val[n - 1] + knapsack(wt, val, W - wt[n - 1], n - 1, t),
+                      knapsack(wt, val, W, n - 1, t)) # Include or exclude the current item and take the maximum of both 
+    else:
+        t[n][W] = knapsack(wt, val, W, n - 1, t) # If weight of item is greater than capacity then we have only one choice to exclude it 
+
+    return t[n][W]
+
+if __name__ == "__main__":
+    # n = int(input("Enter number of items: "))
+    # wt = list(map(int, input("Enter weights: ").split()))
+    # val = list(map(int, input("Enter values: ").split()))
+    # W = int(input("Enter knapsack capacity: "))
+    n = 4
+    wt = [1, 3, 4, 5]
+    val = [1, 4, 5, 7]
+    W = 7
+    # Initialize DP matrix with -1
+    t = [[-1 for _ in range(W + 1)] for _ in range(n + 1)]
+
+    print(knapsack(wt, val, W, n, t))
+
+
+#Pracractise::
+def knapsaack_memorixzation(wt,val,W,n,t):
+    if n ==0 or W==0:
+        return 0
+    if t[n][W] !=-1:
+        return t[n][W]
+    if wt[n-1] <= W:
+        t[n][W] = max(val[n-1]+knapsaack_memorixzation(wt,val,W-wt[n-1],n-1,t),knapsaack_memorixzation(wt,val,W,n-1,t))
+    else:
+        t[n][W] = knapsaack_memorixzation(wt,val,W,n-1,t)
+    return t[n][W]
+n = 4
+wt = [1,3,4,5]
+val = [1,4,5,7]
+W = 7
+t = [[-1 for _ in range(W+1)] for _ in range(n+1)]
+print(knapsaack_memorixzation(wt,val,W,n,t)) # Output: 9
+  
